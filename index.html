@@ -1,0 +1,271 @@
+<html><head><base href="https://websim.dev/custom-apps/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>פיתוח יישומים בהתאמה אישית | מתכנת פרילנסר מומחה</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #6200ea;
+  --secondary-color: #00e676;
+  --text-color: #333;
+  --bg-color: #f5f5f5;
+  --card-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  direction: rtl;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.hero-text {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.feature-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background-color: var(--secondary-color);
+}
+
+.projects {
+  margin: 4rem 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>פיתוח יישומים בהתאמה אישית</h1>
+      <p class="tagline">הפתרון המושלם לצרכים הייחודיים של העסק שלך</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>יישומים מותאמים אישית לצמיחת העסק שלך</h2>
+        <p>אני מתמחה בפיתוח יישומים ייחודיים שמתאימים בדיוק לצרכים ולחזון של הלקוחות שלי. כל פרויקט מתוכנן ומבוצע בקפידה כדי להבטיח את ההצלחה שלך.</p>
+      </div>
+      <div class="hero-image">
+        <svg class="floating" width="300" height="300" viewBox="0 0 300 300">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(98,0,234);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(0,230,118);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <circle cx="150" cy="150" r="130" fill="url(#grad1)" />
+          <text x="150" y="160" font-family="Arial" font-size="60" fill="white" text-anchor="middle">{'{ }'}</text>
+        </svg>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>עיצוב מותאם אישית</h3>
+        <p>כל יישום מעוצב בהתאם לזהות המותג שלך ולצרכים הספציפיים של המשתמשים שלך.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3>ביצועים מהירים</h3>
+        <p>אופטימיזציה מתקדמת לביצועים מהירים ויעילים של היישום שלך.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>אבטחה מתקדמת</h3>
+        <p>יישום שיטות אבטחה מתקדמות להגנה על הנתונים והמשתמשים שלך.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>חווית משתמש מעולה</h3>
+        <p>ממשק משתמש אינטואיטיבי ונוח לשימוש בכל מכשיר.</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>פרויקטים לדוגמה</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://websim.dev/images/project1.jpg" alt="מערכת ניהול מלאי" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">תוכנת הסרטת מסך</h3>
+            <p class="project-description">פיתחנו תוכנת הסרטת מסך עם דגשים על ממשק פשוט והטמעת פיצ'רים לנוחות ומיטוב השימוש.</p>
+            <p class="project-tech">טכנולוגיות: Python</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://websim.dev/images/project2.jpg" alt="מערכת ניהול ספרייה" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">מערכת ניהול ספרייה</h3>
+            <p class="project-description">יצרנו מערכת מתקדמת לניהול, השאלת, והחזרת ספרים תוך דגש על חויית לקוח חלקה ומשופרת.</p>
+            <p class="project-tech">טכנולוגיות: Python, SQLite, qt5</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>מוכנים להתחיל בפיתוח היישום המושלם עבורכם?</h2>
+      <a href="https://websim.dev/contact?ref=custom-apps" class="btn">צרו קשר עכשיו</a>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.feature-card, .project-card').forEach(card => {
+        card.style.opacity = 0;
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+        observer.observe(card);
+      });
+    });
+  </script>
+</body></html>
